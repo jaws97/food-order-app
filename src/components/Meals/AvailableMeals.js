@@ -10,7 +10,7 @@ function AvailableMeals() {
 
   useEffect(() => {
     setIsLoading(true);
-    httpError(false);
+    setHttpError(false);
     const fetchMeals = async () => {
       const response = await fetch(
         "https://custom-hooks-812bd-default-rtdb.firebaseio.com/meals.json"
